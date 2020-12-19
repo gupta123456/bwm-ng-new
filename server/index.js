@@ -21,9 +21,9 @@ require('./models/booking');
 require('./models/cloudinary-image');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT =  3001;
 
-mongoose.connect(config.DB_URI, {
+mongoose.connect('mongodb+srv://testtest:demo@cluster0.omdcp.mongodb.net/test', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true
